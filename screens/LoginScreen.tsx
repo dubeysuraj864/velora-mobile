@@ -29,7 +29,7 @@ export default function LoginScreen() {
 
   const handleSubmit = async () => {
     setLoader(true);
-  
+    router.navigate("Home");
     try {
       if (activeTab === "login") {
         const payload = { email, password };
